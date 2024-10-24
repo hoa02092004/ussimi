@@ -31,7 +31,7 @@ jobs:
         # Tạo file .dmg từ file .app
 
     - name: Upload artifact
-      uses: actions/upload-artifact@v2  # Upload file .dmg dưới dạng artifact
+      uses: actions/upload-artifact@v3  # Upload file .dmg dưới dạng artifact
       with:
         name: MyApp-dmg
         path: MyApp.dmg
