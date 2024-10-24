@@ -3,7 +3,7 @@ name: Build DMG for macOS
 on:
   push:
     branches:
-      - master  # Tự động kích hoạt khi có thay đổi ở nhánh master
+      - main  # Hoặc 'master' nếu bạn dùng tên nhánh này
   pull_request:
 
 jobs:
