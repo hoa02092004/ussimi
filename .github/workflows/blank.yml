@@ -12,10 +12,10 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v3  # Tải code từ repo về máy ảo
+      uses: actions/checkout@v3.5.0  # Tải code từ repo về máy ảo (phiên bản mới)
 
     - name: Set up Python
-      uses: actions/setup-python@v4  # Thiết lập môi trường Python
+      uses: actions/setup-python@v4.7.0  # Thiết lập môi trường Python (phiên bản mới)
       with:
         python-version: '3.x'  # Bạn có thể chỉ định phiên bản Python phù hợp
 
@@ -31,7 +31,7 @@ jobs:
         # Tạo file .dmg từ file .app
 
     - name: Upload artifact
-      uses: actions/upload-artifact@v3  # Upload file .dmg dưới dạng artifact
+      uses: actions/upload-artifact@v3  # Upload file .dmg dưới dạng artifact (v3)
       with:
         name: MyApp-dmg
         path: MyApp.dmg
