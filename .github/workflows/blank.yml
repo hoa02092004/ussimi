@@ -12,10 +12,10 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2  # Tải code từ repo về máy ảo
+      uses: actions/checkout@v3  # Tải code từ repo về máy ảo
 
     - name: Set up Python
-      uses: actions/setup-python@v2  # Thiết lập môi trường Python
+      uses: actions/setup-python@v4  # Thiết lập môi trường Python
       with:
         python-version: '3.x'  # Bạn có thể chỉ định phiên bản Python phù hợp
 
